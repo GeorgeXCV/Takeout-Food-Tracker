@@ -15,6 +15,7 @@
 		5E659FB423BB9F750056AF05 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E659FB323BB9F750056AF05 /* MealTableViewController.swift */; };
 		5E659FB623BBA3E30056AF05 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E659FB523BBA3E30056AF05 /* AddMealViewController.swift */; };
 		5E659FB823BBB0140056AF05 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E659FB723BBB0140056AF05 /* RatingControl.swift */; };
+		5E659FBA23BBD1CC0056AF05 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E659FB923BBD1CC0056AF05 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5E659FB323BB9F750056AF05 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		5E659FB523BBA3E30056AF05 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		5E659FB723BBB0140056AF05 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		5E659FB923BBD1CC0056AF05 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				5E659F9F23BB9EDD0056AF05 /* AppDelegate.swift */,
 				5E659FA123BB9EDD0056AF05 /* SceneDelegate.swift */,
+				5E659FB923BBD1CC0056AF05 /* Meal.swift */,
 				5E659FB323BB9F750056AF05 /* MealTableViewController.swift */,
 				5E659FA523BB9EDD0056AF05 /* Main.storyboard */,
 				5E659FB523BBA3E30056AF05 /* AddMealViewController.swift */,
@@ -148,6 +151,7 @@
 				5E659FB623BBA3E30056AF05 /* AddMealViewController.swift in Sources */,
 				5E659FB423BB9F750056AF05 /* MealTableViewController.swift in Sources */,
 				5E659FB823BBB0140056AF05 /* RatingControl.swift in Sources */,
+				5E659FBA23BBD1CC0056AF05 /* Meal.swift in Sources */,
 				5E659FA223BB9EDD0056AF05 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
