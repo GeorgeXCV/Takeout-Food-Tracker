@@ -22,8 +22,12 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup afer loading the view.
+        // Text Field Delegate (to dismiss Keyboard)
+        mealNameField.delegate = self
+        companyNameField.delegate = self
+        priceField.delegate = self
+        dateTimeField.delegate = self
     }
     
     // MARK: UITextFieldDelegate
