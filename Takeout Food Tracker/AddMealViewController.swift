@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet var imageView: UIImageView!
@@ -34,6 +34,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         companyNameField.delegate = self
         priceField.delegate = self
         dateTimeField.delegate = self
+        notesTextView.delegate = self
         
         // Set up views if editing an existing Meal.
         if let meal = meal {
@@ -45,6 +46,9 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             imageView.image = meal.photo
             ratingControl.rating = meal.rating
         }
+        
+        notesTextView.text = "Notes"
+        notesTextView.textColor = UIColor.lightGray
         
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
@@ -67,6 +71,36 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
            updateSaveButtonState()
            navigationItem.title = mealNameField.text
         }
+    
+    // MARK: UITextViewDelegate
+    
+//    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+//        textView.resignFirstResponder()
+//        return true
+//    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if notesTextView.textColor == UIColor.lightGray { // If placeholder text is displayed, remove it when field is tapped
+            notesTextView.text = ""
+            notesTextView.textColor = UIColor.white
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+         if notesTextView.text.isEmpty { // If text view still empty, display placeholder again
+                      notesTextView.text = "Notes"
+                      notesTextView.textColor = UIColor.lightGray
+        }
+    }
+
 
     //MARK: Private Methods
 
