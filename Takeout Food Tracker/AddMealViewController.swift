@@ -32,12 +32,20 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup afer loading the view.
+
         // Handle the text field’s user input through delegate callbacks.
         mealNameField.delegate = self
         companyNameField.delegate = self
         priceField.delegate = self
         dateTimeField.delegate = self
+        
+        // Set up views if editing an existing Meal.
+        if let meal = meal {
+            navigationItem.title = meal.mealName
+            mealNameField.text = meal.mealName
+            imageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
         
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
