@@ -16,13 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCell" id="DbP-nU-466">
-                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="80" id="DbP-nU-466" customClass="MealTableViewCell" customModule="Takeout_Food_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DbP-nU-466" id="2CC-cr-zEf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-zP-UHM">
+                                            <rect key="frame" x="6" y="7" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-ey-L8D">
+                                            <rect key="frame" x="84" y="7" width="162" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ler-RU-5V2" customClass="RatingControl" customModule="Takeout_Food_Tracker" customModuleProvider="target">
+                                            <rect key="frame" x="84" y="35" width="230" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mealImageView" destination="8jg-zP-UHM" id="GFc-LK-bOz"/>
+                                    <outlet property="mealNameLabel" destination="Rqr-ey-L8D" id="4K1-fe-4ov"/>
+                                    <outlet property="mealRating" destination="ler-RU-5V2" id="BN7-vL-OrZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -41,7 +64,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDg-pI-Nga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.2" y="156.65024630541873"/>
+            <point key="canvasLocation" x="1046.25" y="156.33802816901408"/>
         </scene>
         <!--Add Meal View Controller-->
         <scene sceneID="2NG-fq-bqV">
@@ -103,7 +126,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="wZd-qt-P8R">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Nx8-ty-0wB"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="yAH-ke-RYl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="yAH-ke-RYl">
+                            <connections>
+                                <segue destination="sP9-Zj-ulj" kind="unwind" unwindAction="unwindToMealListWithSender:" id="Tvo-Ju-oig"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="companyNameField" destination="Ve4-Jb-hd5" id="eak-yh-sJC"/>
@@ -117,6 +144,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkU-vN-1GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sP9-Zj-ulj" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="fRd-cM-zhV">
                     <connections>
                         <action selector="selectImage:" destination="U9f-kM-geT" id="YEp-uh-LGp"/>
