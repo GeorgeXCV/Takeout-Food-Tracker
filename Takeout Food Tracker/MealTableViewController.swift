@@ -9,8 +9,6 @@
 import UIKit
 import os.log
 
-
-
 class MealTableViewController: UITableViewController {
     
     var meals = [Meal]()
@@ -175,6 +173,4 @@ class MealTableViewController: UITableViewController {
     private func loadMeals() -> [Meal]?  {
         return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
     }
-
-
 }

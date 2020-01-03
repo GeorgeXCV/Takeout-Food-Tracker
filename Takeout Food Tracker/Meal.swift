@@ -9,8 +9,6 @@
 import UIKit
 import os.log
 
-
-
 class Meal: NSObject, NSCoding {
     
     //MARK: Properties
@@ -37,7 +35,6 @@ class Meal: NSObject, NSCoding {
         static let rating = "rating"
     }
     
-
     //MARK: Initialization
     init?(mealName: String, companyName: String, price: Double, dateTime: String, photo: UIImage?, rating: Int) {
         
@@ -56,8 +53,6 @@ class Meal: NSObject, NSCoding {
 
     //MARK: NSCoding
     
-    
-
     func encode(with aCoder: NSCoder) {
         aCoder.encode(mealName, forKey: PropertyKey.mealName)
         aCoder.encode(companyName, forKey: PropertyKey.companyName)
@@ -67,8 +62,6 @@ class Meal: NSObject, NSCoding {
         aCoder.encode(rating, forKey: PropertyKey.rating)
     }
     
-    
-
     required convenience init?(coder aDecoder: NSCoder) {
         
         // The name is required. If we cannot decode a name string, the initializer should fail.
@@ -78,12 +71,14 @@ class Meal: NSObject, NSCoding {
         }
         
        guard let companyName = aDecoder.decodeObject(forKey: PropertyKey.companyName) as? String else {
+            os_log("Unable to decode the name for a Company object.", log: OSLog.default, type: .debug)
             return nil
         }
         
         let price = aDecoder.decodeDouble(forKey: PropertyKey.price)
         
         guard let dateTime = aDecoder.decodeObject(forKey: PropertyKey.dateTime) as? String else {
+            os_log("Unable to decode the date for a Meal object.", log: OSLog.default, type: .debug)
             return nil
         }
 

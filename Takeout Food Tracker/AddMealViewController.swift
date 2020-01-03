@@ -9,8 +9,6 @@
 import UIKit
 import os.log
 
-
-
 class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var saveButton: UIBarButtonItem!
@@ -28,8 +26,6 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
      */
     var meal: Meal?
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +39,9 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         if let meal = meal {
             navigationItem.title = meal.mealName
             mealNameField.text = meal.mealName
+            companyNameField.text = meal.companyName
+            priceField.text = String(meal.price)
+            dateTimeField.text = meal.dateTime
             imageView.image = meal.photo
             ratingControl.rating = meal.rating
         }
@@ -69,10 +68,6 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
            navigationItem.title = mealNameField.text
         }
 
-
-    
-    
-
     //MARK: Private Methods
 
     private func updateSaveButtonState() {
@@ -80,9 +75,6 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         let text = mealNameField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
     }
-
-
-
     
     // MARK: UIImagePickerControllerDelegate
 
@@ -116,7 +108,6 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
 
               present(imagePickerController, animated: true, completion: nil)
     }
-    
 
     /*
     // MARK: - Navigation
@@ -138,11 +129,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         else {
             fatalError("The MealViewController is not inside a navigation controller.")
         }
-
-
     }
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -156,10 +143,13 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         }
         
         let name = mealNameField.text ?? ""
+        let companyName = companyNameField.text ?? ""
+        let price = Double(priceField.text!) ?? 0.0
+        let dateTime = dateTimeField.text ?? ""
         let photo = imageView.image
         let rating = ratingControl.rating
         
         // Set the meal to be passed to MealTableViewController after the unwind segue.
-        meal = Meal(mealName: name, companyName: name, price: 1.0, dateTime: name, photo: photo, rating: rating)
+        meal = Meal(mealName: name, companyName: companyName, price: price, dateTime: dateTime, photo: photo, rating: rating)
     }
 }
