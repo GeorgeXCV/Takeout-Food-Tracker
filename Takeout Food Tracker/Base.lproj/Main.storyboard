@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController title="MealTableViewController" id="K40-FC-Qek" customClass="MealTableViewController" customModule="Takeout_Food_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QrR-je-rFn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -71,7 +71,7 @@
             <objects>
                 <viewController id="U9f-kM-geT" customClass="AddMealViewController" customModule="Takeout_Food_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DwY-3O-njg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0iB-0E-C8r">
@@ -125,7 +125,12 @@
                         <viewLayoutGuide key="safeArea" id="Q9h-6i-0U7"/>
                     </view>
                     <navigationItem key="navigationItem" id="wZd-qt-P8R">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Nx8-ty-0wB"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nx8-ty-0wB">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="U9f-kM-geT" id="fiQ-2Z-xQ4"/>
+                                <segue destination="K40-FC-Qek" kind="show" id="dKd-GY-Grl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="yAH-ke-RYl">
                             <connections>
                                 <segue destination="sP9-Zj-ulj" kind="unwind" unwindAction="unwindToMealListWithSender:" id="Tvo-Ju-oig"/>
@@ -175,4 +180,7 @@
     <resources>
         <image name="defaultPhoto" width="1080" height="1080"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dKd-GY-Grl"/>
+    </inferredMetricsTieBreakers>
 </document>
