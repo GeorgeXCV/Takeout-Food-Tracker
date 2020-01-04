@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="80" id="DbP-nU-466" customClass="MealTableViewCell" customModule="Takeout_Food_Tracker" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="80" id="DbP-nU-466" customClass="MealTableViewCell" customModule="Takeout_Food_Tracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DbP-nU-466" id="2CC-cr-zEf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-zP-UHM">
@@ -58,7 +58,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="eLt-wF-BOj"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6bW-xo-8ry">
                             <connections>
-                                <segue destination="4uc-3r-JIY" kind="show" identifier="AddItem" id="Lhq-xT-zli"/>
+                                <segue destination="4uc-3r-JIY" kind="presentation" identifier="AddItem" modalPresentationStyle="fullScreen" id="Lhq-xT-zli"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -157,7 +157,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2608" y="135"/>
+            <point key="canvasLocation" x="2678" y="174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qHu-pL-5Cl">
@@ -180,11 +180,12 @@
         <!--Navigation Controller-->
         <scene sceneID="GQb-ja-qwp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ko6-xd-cLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4uc-3r-JIY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="e03-6I-hxx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yBF-aD-ucf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -192,7 +193,6 @@
                         <segue destination="U9f-kM-geT" kind="relationship" relationship="rootViewController" id="BvH-fX-ImA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ko6-xd-cLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1778" y="600"/>
         </scene>

@@ -28,7 +28,6 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Handle the text field’s user input through delegate callbacks.
         mealNameField.delegate = self
         companyNameField.delegate = self
