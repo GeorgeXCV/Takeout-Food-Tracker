@@ -23,23 +23,37 @@
                                     <rect key="frame" x="0.0" y="0.0" width="293" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-zP-UHM">
-                                            <rect key="frame" x="6" y="7" width="70" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-ey-L8D">
-                                            <rect key="frame" x="84" y="7" width="162" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-ey-L8D">
+                                            <rect key="frame" x="84" y="7" width="209" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="209" id="xL9-u8-Z1R"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ler-RU-5V2" customClass="RatingControl" customModule="Takeout_Food_Tracker" customModuleProvider="target">
-                                            <rect key="frame" x="84" y="35" width="230" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ler-RU-5V2" customClass="RatingControl" customModule="Takeout_Food_Tracker" customModuleProvider="target">
+                                            <rect key="frame" x="84" y="35" width="201" height="34"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="201" id="MRZ-Np-LEv"/>
+                                            </constraints>
                                         </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-zP-UHM">
+                                            <rect key="frame" x="0.0" y="0.0" width="65" height="80"/>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ler-RU-5V2" secondAttribute="bottom" constant="11" id="8M2-CJ-yh7"/>
+                                        <constraint firstItem="Rqr-ey-L8D" firstAttribute="leading" secondItem="8jg-zP-UHM" secondAttribute="trailing" constant="19" id="DJE-Ng-n9v"/>
+                                        <constraint firstAttribute="bottom" secondItem="Rqr-ey-L8D" secondAttribute="bottom" constant="52" id="GjD-ly-RId"/>
+                                        <constraint firstItem="ler-RU-5V2" firstAttribute="top" secondItem="2CC-cr-zEf" secondAttribute="top" constant="35" id="IsI-cs-ldb"/>
+                                        <constraint firstItem="8jg-zP-UHM" firstAttribute="centerY" secondItem="2CC-cr-zEf" secondAttribute="centerY" id="JMy-AI-2rw"/>
+                                        <constraint firstAttribute="trailing" secondItem="ler-RU-5V2" secondAttribute="trailing" constant="8" id="ReJ-18-lGN"/>
+                                        <constraint firstItem="8jg-zP-UHM" firstAttribute="leading" secondItem="2CC-cr-zEf" secondAttribute="leadingMargin" constant="-16" id="pqj-RD-0U9"/>
+                                        <constraint firstAttribute="trailing" secondItem="Rqr-ey-L8D" secondAttribute="trailing" id="qAU-ey-LvX"/>
+                                        <constraint firstItem="8jg-zP-UHM" firstAttribute="top" secondItem="2CC-cr-zEf" secondAttribute="topMargin" constant="-11" id="y3N-2c-qZ8"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="mealImageView" destination="8jg-zP-UHM" id="GFc-LK-bOz"/>
@@ -76,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0iB-0E-C8r">
-                                <rect key="frame" x="0.0" y="44" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -84,31 +98,31 @@
                                 </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7k-uH-yXo">
-                                <rect key="frame" x="0.0" y="243" width="320" height="34"/>
+                                <rect key="frame" x="0.0" y="194" width="320" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-Jb-hd5">
-                                <rect key="frame" x="0.0" y="275" width="320" height="34"/>
+                                <rect key="frame" x="0.0" y="226" width="320" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-4y-Qpy">
-                                <rect key="frame" x="0.0" y="308" width="130" height="34"/>
+                                <rect key="frame" x="0.0" y="259" width="130" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date/Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wu1-Ry-CDu">
-                                <rect key="frame" x="130" y="308" width="190" height="34"/>
+                                <rect key="frame" x="130" y="259" width="190" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tn7-pL-JFd">
-                                <rect key="frame" x="0.0" y="342" width="320" height="128"/>
+                                <rect key="frame" x="0.0" y="293" width="320" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -116,8 +130,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textView>
-                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1l-gd-EpQ" customClass="RatingControl" customModule="Takeout_Food_Tracker" customModuleProvider="target">
-                                <rect key="frame" x="16" y="478" width="271" height="64"/>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1l-gd-EpQ" customClass="RatingControl" customModule="Takeout_Food_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="25" y="423" width="230" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -180,7 +194,6 @@
         <!--Navigation Controller-->
         <scene sceneID="GQb-ja-qwp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ko6-xd-cLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4uc-3r-JIY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="e03-6I-hxx"/>
@@ -193,6 +206,7 @@
                         <segue destination="U9f-kM-geT" kind="relationship" relationship="rootViewController" id="BvH-fX-ImA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ko6-xd-cLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1778" y="600"/>
         </scene>
