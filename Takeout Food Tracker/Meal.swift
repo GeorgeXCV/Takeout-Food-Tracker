@@ -18,6 +18,7 @@ class Meal: NSObject, NSCoding {
     var dateTime: String
     var photo: UIImage?
     var rating: Int
+    var notes: String
         
     //MARK: Archiving Paths
      
@@ -33,10 +34,11 @@ class Meal: NSObject, NSCoding {
         static let dateTime = "dateTime"
         static let photo = "photo"
         static let rating = "rating"
+        static let notes = "notes"
     }
     
     //MARK: Initialization
-    init?(mealName: String, companyName: String, price: Double, dateTime: String, photo: UIImage?, rating: Int) {
+    init?(mealName: String, companyName: String, price: Double, dateTime: String, photo: UIImage?, rating: Int, notes: String) {
         
         // Initialization should fail if there is no name or if the rating is negative.
         if mealName.isEmpty || rating < 0  {
@@ -49,6 +51,7 @@ class Meal: NSObject, NSCoding {
         self.dateTime = dateTime
         self.photo = photo
         self.rating = rating
+        self.notes = notes
     }
 
     //MARK: NSCoding
@@ -60,6 +63,7 @@ class Meal: NSObject, NSCoding {
         aCoder.encode(dateTime, forKey: PropertyKey.dateTime)
         aCoder.encode(photo, forKey: PropertyKey.photo)
         aCoder.encode(rating, forKey: PropertyKey.rating)
+        aCoder.encode(notes, forKey: PropertyKey.notes)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
@@ -87,8 +91,13 @@ class Meal: NSObject, NSCoding {
         
         let rating = aDecoder.decodeInteger(forKey: PropertyKey.rating)
         
+        guard let notes = aDecoder.decodeObject(forKey: PropertyKey.notes) as? String else {
+            os_log("Unable to decode the notes for a Meal object.", log: OSLog.default, type: .debug)
+            return nil
+        }
+        
         // Must call designated initializer.
-        self.init(mealName: mealName, companyName: companyName, price: price, dateTime: dateTime, photo: photo, rating: rating)
+        self.init(mealName: mealName, companyName: companyName, price: price, dateTime: dateTime, photo: photo, rating: rating, notes: notes)
     }
 }
 

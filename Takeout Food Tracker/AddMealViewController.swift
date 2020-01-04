@@ -41,14 +41,16 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             navigationItem.title = meal.mealName
             mealNameField.text = meal.mealName
             companyNameField.text = meal.companyName
-            priceField.text = String(meal.price)
+            priceField.text = "£" + String(meal.price)
             dateTimeField.text = meal.dateTime
             imageView.image = meal.photo
             ratingControl.rating = meal.rating
+            notesTextView.text = meal.notes
         }
-        
-        notesTextView.text = "Notes"
-        notesTextView.textColor = UIColor.lightGray
+        else {
+            notesTextView.text = "Notes"
+            notesTextView.textColor = UIColor.lightGray
+        }
         
         // Enable the Save button only if the text field has a valid Meal name.
         updateSaveButtonState()
@@ -65,6 +67,9 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
        func textFieldDidBeginEditing(_ textField: UITextField) {
           // Disable the Save button while editing.
           saveButton.isEnabled = false
+        if textField.tag == 3 {
+            priceField.text = "£"
+         }
         }
     
        func textFieldDidEndEditing(_ textField: UITextField) {
@@ -182,8 +187,9 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         let dateTime = dateTimeField.text ?? ""
         let photo = imageView.image
         let rating = ratingControl.rating
+        let notes = notesTextView.text ?? ""
         
         // Set the meal to be passed to MealTableViewController after the unwind segue.
-        meal = Meal(mealName: name, companyName: companyName, price: price, dateTime: dateTime, photo: photo, rating: rating)
+        meal = Meal(mealName: name, companyName: companyName, price: price, dateTime: dateTime, photo: photo, rating: rating, notes: notes)
     }
 }
