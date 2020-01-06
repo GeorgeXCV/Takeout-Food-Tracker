@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import DateTimePicker
 
 class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -25,7 +26,8 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
      or constructed as part of adding a new meal.
      */
     var meal: Meal?
-
+    var picker = DateTimePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Handle the text field’s user input through delegate callbacks.
@@ -34,7 +36,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         priceField.delegate = self
         dateTimeField.delegate = self
         notesTextView.delegate = self
-        
+                
         // Set up views if editing an existing Meal.
         if let meal = meal {
             navigationItem.title = meal.mealName
@@ -81,11 +83,36 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         if textField.tag == 3 {
             priceField.text = "£"
          }
+        if textField.tag == 4 {
+            textField.resignFirstResponder()
+            // Default for min - -60 * 60 * 24 * 4 / Max (60 * 60 * 24 * 4) - 4 Days
+            let min = Date().addingTimeInterval(-500 * 120 * 50 * 8)
+            let max = Date()
+            picker = DateTimePicker.create(minimumDate: min, maximumDate: max)
+            picker.frame = CGRect(x: 0, y: 250, width: picker.frame.size.width, height: picker.frame.size.height)
+            picker.is12HourFormat = false
+            picker.dateFormat = "dd/MM/YYYY HH:mm"
+            picker.normalColor = UIColor.secondarySystemGroupedBackground
+            picker.darkColor = UIColor.label
+            picker.contentViewBackgroundColor = UIColor.systemBackground
+            picker.daysBackgroundColor = UIColor.groupTableViewBackground
+            picker.titleBackgroundColor = UIColor.secondarySystemGroupedBackground
+            self.view.addSubview(picker)
+            picker.dismissHandler = {
+                self.picker.removeFromSuperview()
+            }
+            picker.completionHandler = { date in
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd/MM/YYYY HH:mm"
+                self.dateTimeField.text = formatter.string(from: date)
+                
+        }
         }
     
        func textFieldDidEndEditing(_ textField: UITextField) {
            updateSaveButtonState()
            navigationItem.title = mealNameField.text
+            }
         }
     
     // MARK: UITextViewDelegate

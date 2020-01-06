@@ -1,0 +1,16 @@
+PODS:
+  - DateTimePicker (2.3.0)
+
+DEPENDENCIES:
+  - DateTimePicker (~> 2.3)
+
+SPEC REPOS:
+  trunk:
+    - DateTimePicker
+
+SPEC CHECKSUMS:
+  DateTimePicker: d34aa4aceb6d7e51667d8acb51f05ddb6f562f5c
+
+PODFILE CHECKSUM: e675014a2cf4483c418a8c688cc7c326fde544cf
+
+COCOAPODS: 1.8.3

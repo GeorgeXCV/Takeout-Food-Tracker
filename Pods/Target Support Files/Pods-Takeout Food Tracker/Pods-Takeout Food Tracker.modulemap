@@ -1,0 +1,6 @@
+framework module Pods_Takeout_Food_Tracker {
+  umbrella header "Pods-Takeout Food Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

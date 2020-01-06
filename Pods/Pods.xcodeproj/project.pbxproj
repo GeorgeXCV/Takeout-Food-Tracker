@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022FB38AE3AB01865DE92A60F6C2CB00 /* Pods-Takeout Food Tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F37CBDBC07A8B145AF265B7385838 /* Pods-Takeout Food Tracker-dummy.m */; };
+		08CBE0625C27AE48F012125053C905F6 /* DateTimePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD1BC2905621153A27A27B6BA6F56BF6 /* DateTimePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E18FF7709A48AB32AE3150DF36BE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		8BDFA1B5395186F77BCE3777876BAF19 /* DateTimePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C090A00B41CC8DF5FA1C4864B6665 /* DateTimePicker-dummy.m */; };
+		9DFE2B39FE34266B354361B61F56DCF9 /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3463FDF92BF540371023DFF2E0BE9 /* StepCollectionViewFlowLayout.swift */; };
+		A302BC595CB56C83EE5DF15D3DAB1C66 /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216F93C82A6FAB07545809B6E1F2543B /* DateTimePicker.swift */; };
+		B4E888168043864C3DAE56F222785CE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B54B36DDC883702AEC590C5AF1321E06 /* FullDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9BA68E6D9D971D3847B57534384DC5 /* FullDateCollectionViewCell.swift */; };
+		C72ECAAAA12AAB926FCBCB6886CB27B5 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EDDC62D54E755622F8A4851F0FE4AF /* DateCollectionViewCell.swift */; };
+		F171B11AB9CA6C1B09E01F8DD0A6329F /* Pods-Takeout Food Tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F54E8B84DC1D130A901EE6EE84225460 /* Pods-Takeout Food Tracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5F9FD1013F5E036E80C1A4A68367CF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01CDADA51591EAB4D703DE8E47C52763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E89965CFA54DE4BCC99C05112D7483;
+			remoteInfo = DateTimePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EE123C06549E176639293D88042DCF6 /* Pods-Takeout Food Tracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Takeout Food Tracker-frameworks.sh"; sourceTree = "<group>"; };
+		216F93C82A6FAB07545809B6E1F2543B /* DateTimePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimePicker.swift; path = Source/DateTimePicker.swift; sourceTree = "<group>"; };
+		2280DFF15D10935A676B7AA653DCF1C8 /* Pods-Takeout Food Tracker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Takeout Food Tracker-Info.plist"; sourceTree = "<group>"; };
+		241F37CBDBC07A8B145AF265B7385838 /* Pods-Takeout Food Tracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Takeout Food Tracker-dummy.m"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		35EAF19CE820A9591FE3D3B7BFF13CCE /* DateTimePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-prefix.pch"; sourceTree = "<group>"; };
+		4183B962AFE05653BF0F37BAC410966A /* DateTimePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DateTimePicker.modulemap; sourceTree = "<group>"; };
+		41DC23D43FB2239EA94A96CD851E71F4 /* Pods-Takeout Food Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Takeout Food Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5769D59B4EF79550742FDA4F9B6B46DB /* DateTimePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateTimePicker-Info.plist"; sourceTree = "<group>"; };
+		59A9D64EA2B410B69C571A209C1A45EB /* Pods-Takeout Food Tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Takeout Food Tracker.modulemap"; sourceTree = "<group>"; };
+		8AE3463FDF92BF540371023DFF2E0BE9 /* StepCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepCollectionViewFlowLayout.swift; path = Source/StepCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A07C090A00B41CC8DF5FA1C4864B6665 /* DateTimePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTimePicker-dummy.m"; sourceTree = "<group>"; };
+		A85BC1BAF805ABA451B181BFCE0A7463 /* Pods-Takeout Food Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Takeout Food Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9BA68E6D9D971D3847B57534384DC5 /* FullDateCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullDateCollectionViewCell.swift; path = Source/FullDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD1BC2905621153A27A27B6BA6F56BF6 /* DateTimePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-umbrella.h"; sourceTree = "<group>"; };
+		B1F5ED6AEECB101C7B3DA07ED86053E7 /* Pods-Takeout Food Tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Takeout Food Tracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateTimePicker.framework; path = DateTimePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EE7599627E8B68E8B70EB6F7800832 /* Pods_Takeout_Food_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Takeout_Food_Tracker.framework; path = "Pods-Takeout Food Tracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EDDC62D54E755622F8A4851F0FE4AF /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateCollectionViewCell.swift; path = Source/DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		E28B17267D1C21FC90C9896161583593 /* DateTimePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTimePicker.xcconfig; sourceTree = "<group>"; };
+		ED87B9479C8DE2220934FF1724CB6E0C /* Pods-Takeout Food Tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Takeout Food Tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F54E8B84DC1D130A901EE6EE84225460 /* Pods-Takeout Food Tracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Takeout Food Tracker-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944772DA8E2955A020D3B530631A3EA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E18FF7709A48AB32AE3150DF36BE86 /* Foundation.framework in Frameworks */,
+				F5F9FD1013F5E036E80C1A4A68367CF5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07670BB153AB5D3C28A4EA3EB68CDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E888168043864C3DAE56F222785CE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222E0404BBAFECBE55FA2192D4804202 /* Pods-Takeout Food Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				59A9D64EA2B410B69C571A209C1A45EB /* Pods-Takeout Food Tracker.modulemap */,
+				ED87B9479C8DE2220934FF1724CB6E0C /* Pods-Takeout Food Tracker-acknowledgements.markdown */,
+				B1F5ED6AEECB101C7B3DA07ED86053E7 /* Pods-Takeout Food Tracker-acknowledgements.plist */,
+				241F37CBDBC07A8B145AF265B7385838 /* Pods-Takeout Food Tracker-dummy.m */,
+				0EE123C06549E176639293D88042DCF6 /* Pods-Takeout Food Tracker-frameworks.sh */,
+				2280DFF15D10935A676B7AA653DCF1C8 /* Pods-Takeout Food Tracker-Info.plist */,
+				F54E8B84DC1D130A901EE6EE84225460 /* Pods-Takeout Food Tracker-umbrella.h */,
+				A85BC1BAF805ABA451B181BFCE0A7463 /* Pods-Takeout Food Tracker.debug.xcconfig */,
+				41DC23D43FB2239EA94A96CD851E71F4 /* Pods-Takeout Food Tracker.release.xcconfig */,
+			);
+			name = "Pods-Takeout Food Tracker";
+			path = "Target Support Files/Pods-Takeout Food Tracker";
+			sourceTree = "<group>";
+		};
+		7EC76038DAAB5820A4FACDF2331F9461 /* DateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D2EDDC62D54E755622F8A4851F0FE4AF /* DateCollectionViewCell.swift */,
+				216F93C82A6FAB07545809B6E1F2543B /* DateTimePicker.swift */,
+				AB9BA68E6D9D971D3847B57534384DC5 /* FullDateCollectionViewCell.swift */,
+				8AE3463FDF92BF540371023DFF2E0BE9 /* StepCollectionViewFlowLayout.swift */,
+				A99DD9AF837C91291A1B0E3E273516E1 /* Support Files */,
+			);
+			name = DateTimePicker;
+			path = DateTimePicker;
+			sourceTree = "<group>";
+		};
+		A99DD9AF837C91291A1B0E3E273516E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4183B962AFE05653BF0F37BAC410966A /* DateTimePicker.modulemap */,
+				E28B17267D1C21FC90C9896161583593 /* DateTimePicker.xcconfig */,
+				A07C090A00B41CC8DF5FA1C4864B6665 /* DateTimePicker-dummy.m */,
+				5769D59B4EF79550742FDA4F9B6B46DB /* DateTimePicker-Info.plist */,
+				35EAF19CE820A9591FE3D3B7BFF13CCE /* DateTimePicker-prefix.pch */,
+				AD1BC2905621153A27A27B6BA6F56BF6 /* DateTimePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTimePicker";
+			sourceTree = "<group>";
+		};
+		ABAEBEC6C5EE9ACBB90E25B6E9A4D3E7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				222E0404BBAFECBE55FA2192D4804202 /* Pods-Takeout Food Tracker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B020E0BCCAFF75677D004012DF9B4B4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */,
+				C3EE7599627E8B68E8B70EB6F7800832 /* Pods_Takeout_Food_Tracker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89815D57A194ED2104A613D9C08C895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EC76038DAAB5820A4FACDF2331F9461 /* DateTimePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B89815D57A194ED2104A613D9C08C895 /* Pods */,
+				B020E0BCCAFF75677D004012DF9B4B4E /* Products */,
+				ABAEBEC6C5EE9ACBB90E25B6E9A4D3E7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		344D9FD43DE7882971DDFAC186C023E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CBE0625C27AE48F012125053C905F6 /* DateTimePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3798601EC5B07341C9B188D10A0A9F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F171B11AB9CA6C1B09E01F8DD0A6329F /* Pods-Takeout Food Tracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD3B79F1FE2FF0FADB80B290C239163 /* Build configuration list for PBXNativeTarget "DateTimePicker" */;
+			buildPhases = (
+				344D9FD43DE7882971DDFAC186C023E0 /* Headers */,
+				2EAAB48BFBFCD6A8489F1BACF6CF6C2C /* Sources */,
+				944772DA8E2955A020D3B530631A3EA5 /* Frameworks */,
+				7BAC4657C583CF4953384CE1D97D4255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateTimePicker;
+			productName = DateTimePicker;
+			productReference = B26CB6AD16677CB8E5B8A5059EA05677 /* DateTimePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E253F14DBF449FBECB061A170A9B9A69 /* Pods-Takeout Food Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2573D777AE9776A8504131DB7ED8412 /* Build configuration list for PBXNativeTarget "Pods-Takeout Food Tracker" */;
+			buildPhases = (
+				E3798601EC5B07341C9B188D10A0A9F0 /* Headers */,
+				7E994DBF20E9EDC40B62A6BC31D6E090 /* Sources */,
+				D07670BB153AB5D3C28A4EA3EB68CDE2 /* Frameworks */,
+				4CF961290B0C22819365E65E02E5518E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2B5851961EC1D4F75220925012609B /* PBXTargetDependency */,
+			);
+			name = "Pods-Takeout Food Tracker";
+			productName = "Pods-Takeout Food Tracker";
+			productReference = C3EE7599627E8B68E8B70EB6F7800832 /* Pods_Takeout_Food_Tracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B020E0BCCAFF75677D004012DF9B4B4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */,
+				E253F14DBF449FBECB061A170A9B9A69 /* Pods-Takeout Food Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CF961290B0C22819365E65E02E5518E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BAC4657C583CF4953384CE1D97D4255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EAAB48BFBFCD6A8489F1BACF6CF6C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72ECAAAA12AAB926FCBCB6886CB27B5 /* DateCollectionViewCell.swift in Sources */,
+				8BDFA1B5395186F77BCE3777876BAF19 /* DateTimePicker-dummy.m in Sources */,
+				A302BC595CB56C83EE5DF15D3DAB1C66 /* DateTimePicker.swift in Sources */,
+				B54B36DDC883702AEC590C5AF1321E06 /* FullDateCollectionViewCell.swift in Sources */,
+				9DFE2B39FE34266B354361B61F56DCF9 /* StepCollectionViewFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E994DBF20E9EDC40B62A6BC31D6E090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022FB38AE3AB01865DE92A60F6C2CB00 /* Pods-Takeout Food Tracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE2B5851961EC1D4F75220925012609B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTimePicker;
+			target = 31E89965CFA54DE4BCC99C05112D7483 /* DateTimePicker */;
+			targetProxy = 01CDADA51591EAB4D703DE8E47C52763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4B233FF3289C903D839DDB2967B86044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85BC1BAF805ABA451B181BFCE0A7463 /* Pods-Takeout Food Tracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Takeout Food Tracker/Pods-Takeout Food Tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Takeout Food Tracker/Pods-Takeout Food Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5B0EDE105696234E2606F01499CFB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41DC23D43FB2239EA94A96CD851E71F4 /* Pods-Takeout Food Tracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Takeout Food Tracker/Pods-Takeout Food Tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Takeout Food Tracker/Pods-Takeout Food Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB6567EB134EA2B62B6A864F1DB9AD69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28B17267D1C21FC90C9896161583593 /* DateTimePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTimePicker/DateTimePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/DateTimePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DateTimePicker/DateTimePicker.modulemap";
+				PRODUCT_MODULE_NAME = DateTimePicker;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F33A62CF67F9BD05D480900D152209C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28B17267D1C21FC90C9896161583593 /* DateTimePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTimePicker/DateTimePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTimePicker/DateTimePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DateTimePicker/DateTimePicker.modulemap";
+				PRODUCT_MODULE_NAME = DateTimePicker;
+				PRODUCT_NAME = DateTimePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2573D777AE9776A8504131DB7ED8412 /* Build configuration list for PBXNativeTarget "Pods-Takeout Food Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B233FF3289C903D839DDB2967B86044 /* Debug */,
+				D5B0EDE105696234E2606F01499CFB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD3B79F1FE2FF0FADB80B290C239163 /* Build configuration list for PBXNativeTarget "DateTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6567EB134EA2B62B6A864F1DB9AD69 /* Debug */,
+				F33A62CF67F9BD05D480900D152209C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
