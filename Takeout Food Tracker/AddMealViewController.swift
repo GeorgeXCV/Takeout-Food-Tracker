@@ -69,6 +69,17 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
          self.view.frame.origin.y = 0 // Move view to original position
     }
     
+    func addDoneButton() {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+            target: nil, action: nil)
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done,
+            target: view, action: #selector(UIView.endEditing(_:)))
+        keyboardToolbar.items = [flexBarButton, doneBarButton]
+        priceField.inputAccessoryView = keyboardToolbar
+    }
+    
     // MARK: UITextFieldDelegate
 
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -82,6 +93,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
           saveButton.isEnabled = false
         if textField.tag == 3 {
             priceField.text = "£"
+            addDoneButton()
          }
         if textField.tag == 4 {
             textField.resignFirstResponder()
@@ -106,13 +118,13 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
                 formatter.dateFormat = "dd/MM/YYYY HH:mm"
                 self.dateTimeField.text = formatter.string(from: date)
                 
+         }
         }
-        }
+    }
     
        func textFieldDidEndEditing(_ textField: UITextField) {
            updateSaveButtonState()
            navigationItem.title = mealNameField.text
-            }
         }
     
     // MARK: UITextViewDelegate
