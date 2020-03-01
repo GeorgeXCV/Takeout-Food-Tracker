@@ -1,5 +1,5 @@
 PODS:
-  - DateTimePicker (2.3.0)
+  - DateTimePicker (2.4.0)
 
 DEPENDENCIES:
   - DateTimePicker (~> 2.3)
@@ -9,7 +9,7 @@ SPEC REPOS:
     - DateTimePicker
 
 SPEC CHECKSUMS:
-  DateTimePicker: d34aa4aceb6d7e51667d8acb51f05ddb6f562f5c
+  DateTimePicker: 778c3d3d1e3b1d4172c46feb0a319e2b31a94879
 
 PODFILE CHECKSUM: e675014a2cf4483c418a8c688cc7c326fde544cf
 

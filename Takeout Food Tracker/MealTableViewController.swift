@@ -43,7 +43,6 @@ class MealTableViewController: UITableViewController {
         return meals.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "MealTableViewCell"
@@ -56,7 +55,7 @@ class MealTableViewController: UITableViewController {
         let meal = meals[indexPath.row]
         
         cell.mealNameLabel.text = meal.mealName
-        cell.imageView?.image = meal.photo
+        cell.mealImageView.image = meal.photo
         cell.mealRating.rating = meal.rating
 
         return cell
@@ -93,8 +92,6 @@ class MealTableViewController: UITableViewController {
         return true
     }
 
-
-  
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

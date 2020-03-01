@@ -36,13 +36,17 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         priceField.delegate = self
         dateTimeField.delegate = self
         notesTextView.delegate = self
+        
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
                 
         // Set up views if editing an existing Meal.
         if let meal = meal {
             navigationItem.title = meal.mealName
             mealNameField.text = meal.mealName
             companyNameField.text = meal.companyName
-            priceField.text = "£" + String(meal.price)
+            priceField.text = currencyFormatter.string(for: meal.price)!
             dateTimeField.text = meal.dateTime
             imageView.image = meal.photo
             ratingControl.rating = meal.rating
@@ -92,7 +96,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
           // Disable the Save button while editing.
           saveButton.isEnabled = false
         if textField.tag == 3 {
-            priceField.text = "£"
+//            priceField.text = "£"
             addDoneButton()
          }
         if textField.tag == 4 {
@@ -232,7 +236,7 @@ class AddMealViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         
         let name = mealNameField.text ?? ""
         let companyName = companyNameField.text ?? ""
-        let price = Double(priceField.text!) ?? 0.0
+        let price =  Double(priceField.text!) ?? 0.0
         let dateTime = dateTimeField.text ?? ""
         let photo = imageView.image
         let rating = ratingControl.rating
